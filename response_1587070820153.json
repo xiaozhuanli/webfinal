@@ -1,0 +1,23 @@
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,fr;q=0.6,und;q=0.5,eo;q=0.4",
+    "Content-Length": "0",
+    "Host": "httpbin.org",
+    "Origin": "https://httpbin.org",
+    "Referer": "https://httpbin.org/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-5e98c762-fbb9fe90720f18906cebfa34"
+  },
+  "json": null,
+  "origin": "65.95.233.29",
+  "url": "https://httpbin.org/post"
+}

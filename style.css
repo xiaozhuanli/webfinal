@@ -1,0 +1,278 @@
+/** Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
+
+* {
+  margin: 0em;
+  padding: 0.2em;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
+@-ms-viewport {
+  width: device-width ;
+} 
+
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+} 
+
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+} 
+
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+@media screen and (orientation:portrait) {
+  /* ... */
+}
+@media screen and (orientation: landscape) {
+  /* ... */
+} 
+@media only screen and (max-width: 480px) {
+  /* ... */
+} 
+@media not (max-width: 639px) {
+  /* CSS rules for any device that is wider than 639 pixels */
+  } 
+
+img, object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; } 
+body {font: normal 100% Helvetica, Arial, sans-serif;}
+h1 {font-size: 1.5em;}
+small {font-size: 0.875em;}
+.main {float: right;
+  　　　width: 70%; }
+.leftBar{float: left;
+  　　　　width: 25%;}
+  @media screen and (max-device-width: 400px) {
+    　　　　.column {float: none;
+    　　　　　　     width: auto;}
+           #sidebar {display:none;}}
+html,
+body {
+  margin: 0;
+  width: fit-content;
+}
+.storeName {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: contents;
+  font-size: 3.2em;
+  color: rgb(83, 42, 4);
+}
+
+header {
+  flex-direction: row;
+  flex-shrink: inherit ;
+  display: -webkit-inline-flex;
+  justify-content: space-around;
+  background-color:#679b9b;
+  height: 13em;
+  align-content: center;
+  width: 100%;
+}
+
+main{
+  flex-flow: column wrap;
+  display: flex;
+  background-position: 0em;
+  display: -moz-deck;
+  background-color: #bbded6;
+
+  flex-flow: row;
+  margin: 50 rem;
+  width: 100%;
+  height: 200%;
+  background-size: cover;
+}
+
+.logo{
+  padding: 1em ;
+  cursor: pointer;
+}
+
+#title p {
+  padding: 10px;
+  padding-top: 15px;
+  height: 70px;
+  color: whitesmoke;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.6em;
+}
+#first-section {
+  display: flex;
+  background-position: 0cm;
+  display: -moz-deck;
+  background-color: #bbded6;
+  flex-flow: row;
+  margin: 50 rem;
+  width: 100%;
+  height: 200%;
+  background-size: cover;  
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.menu_image img {
+  padding: 1em;
+  border: 1em solid #fae3d9;
+  margin: 0 3em;
+  cursor: pointer;
+  box-shadow: 1.5em 1.5em 1.4em 0em rgba(50, 50, 50, 0.75);
+  width: 16em;
+  height: 22em;
+}
+
+ul{
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  list-style-type:none;
+  margin:0; 
+  padding:0;
+  width:13em; 
+  background-color: #fae3d9;
+}
+ul.storeName {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  list-style-type:none;
+  margin:0; 
+  padding:0;
+  width:12em; 
+  background-color: #fae3d9;
+}
+
+li a {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  display: block;
+  color: #000;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: #fae3d9;
+}
+
+#myListContainer {
+  padding-top: 16em;
+  padding-left: 1.5em;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#myListContainer button {
+  padding: 0.8em;
+  padding-bottom: 0.5em;
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: rgb(0, 29, 31);
+  background-color:#fae3d9 ;
+  border: 0;
+  outline: none;
+}
+#myListContainer a:hover {
+  background-color: #555;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+#myListContainer button:hover {
+  background-color: #555;
+  color: #fae3d9;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.button_design:hover {
+  font-weight: bold;
+}
+#footer {
+  padding-left: 2em;
+  display:table-footer-group;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.1em;
+  background-color: #fae3d9;
+  height: 23em;
+}
+#footer div {
+  flex: 1.5;
+  text-decoration: none;
+}
+#footer div#Z {
+  flex: 1;
+  padding-left: 5em;
+}
+#footer div.info {
+  flex: 1.5;
+  text-decoration: none;
+}
+#footer a:hover {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+.main-form label {
+  display: block;
+  font-weight: normal;
+  margin: 1em 0;
+}
+
+.main-form textarea {
+  width: 30em;
+}
+.main-form input[type='text'],
+input[type='email'] {
+  width: 30em;
+  border-radius: 0.5em;
+}
+.main-form {
+  margin: 0 1em;
+  background-color: #bbded6;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
