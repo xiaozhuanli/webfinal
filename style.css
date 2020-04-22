@@ -1,25 +1,77 @@
 /** Add any CSS you need to this file. */
-/* @import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand'); */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
 
 * {
   margin: 0em;
   padding: 0.2em;
 }
 
-/* @media screen and (max-device-width: 400px) {
-.column {
-   overflow-wrap: normal;
-    width: 100%;
-    float: left;
- }
- header{
-    font-size: 1em;
- }
- .storeName {
-  font-size: 1.2em;
- }
-  #sidebar {display:none;}} */
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
 
+@-ms-viewport {
+  width: device-width ;
+} 
+
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+} 
+
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+} 
+
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+@media screen and (orientation:portrait) {
+  /* ... */
+}
+@media screen and (orientation: landscape) {
+  /* ... */
+} 
+@media only screen and (max-width: 480px) {
+  /* ... */
+} 
+@media not (max-width: 639px) {
+  /* CSS rules for any device that is wider than 639 pixels */
+  } 
+
+img, object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; } 
+body {font: normal 100% Helvetica, Arial, sans-serif;}
+h1 {font-size: 1.5em;}
+small {font-size: 0.875em;}
+.main {float: right;
+  　　　width: 70%; }
+.leftBar{float: left;
+  　　　　width: 25%;}
+  @media screen and (max-device-width: 400px) {
+    　　　　.column {float: none;
+    　　　　　　     width: auto;}
+           #sidebar {display:none;}}
 html,
 body {
   margin: 0;
@@ -78,15 +130,15 @@ main{
   flex-flow: row;
   margin: 50 rem;
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-size: cover;  
+  display: flex;
 }
 
 .column {
-  flex-flow: row;
-  float: right;
+  float: left;
   width: 33.33%;
-  display: flex;
+  display: none;
 }
 
 .show {
@@ -94,8 +146,6 @@ main{
 }
 
 .menu_image img {
-  flex-flow: row;
-  display: flex;
   padding: 1em;
   border: 1em solid #fae3d9;
   margin: 0 3em;
